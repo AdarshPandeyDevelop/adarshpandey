@@ -28,23 +28,16 @@
         --border: rgba(232, 103, 10, 0.15);
         --card-bg: rgba(255, 255, 255, 0.03);
 
-        /* Responsive spacing scale */
         --space-xs: clamp(8px, 2vw, 16px);
         --space-sm: clamp(16px, 3vw, 24px);
         --space-md: clamp(24px, 4vw, 48px);
         --space-lg: clamp(40px, 6vw, 80px);
         --space-xl: clamp(60px, 8vw, 120px);
 
-        /* Responsive padding */
         --page-pad: clamp(20px, 5vw, 80px);
-
-        /* Nav height */
         --nav-h: 64px;
       }
 
-      /* ===========================
-         RESET & BASE
-      =========================== */
       *,
       *::before,
       *::after {
@@ -57,7 +50,6 @@
         margin-left: 2vw;
         scroll-behavior: smooth;
         -webkit-text-size-adjust: 100%;
-        /* overflow-x: hidden; */
         width: 90vw;
       }
 
@@ -65,13 +57,11 @@
         background: var(--bg);
         color: var(--text);
         font-family: "JetBrains Mono", monospace;
-        /* overflow-x: hidden; */
         cursor: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
 
-      /* Disable custom cursor on touch devices */
       @media (hover: none) {
         body {
           cursor: auto;
@@ -393,7 +383,6 @@
         transform: scale(1.03);
       }
 
-      /* Mobile nav toggle */
       .nav-hamburger {
         display: none;
         flex-direction: column;
@@ -403,7 +392,6 @@
         border: none;
         background: transparent;
         z-index: 101;
-        /* margin-right: 25vw; */
       }
       .nav-hamburger span {
         display: block;
@@ -425,7 +413,6 @@
         transform: translateY(-7px) rotate(-45deg);
       }
 
-      /* Mobile menu overlay */
       .nav-mobile-menu {
         display: none;
         position: fixed;
@@ -653,7 +640,7 @@
       }
 
       /* ===========================
-         PAIN / THE STACK
+         THE STACK
       =========================== */
       #stack {
         padding: var(--space-xl) var(--page-pad);
@@ -668,7 +655,6 @@
         border-top: 1px solid var(--border);
         align-items: start;
       }
-
       .pain-meta {
         font-size: 11px;
         color: var(--text-dim);
@@ -677,7 +663,6 @@
         line-height: 1.8;
         padding-top: 4px;
       }
-
       .pain-quote {
         font-family: "Playfair Display", serif;
         font-size: clamp(17px, 2.8vw, 34px);
@@ -692,7 +677,6 @@
         color: var(--orange);
         margin-right: 4px;
       }
-
       .pain-desc {
         font-size: clamp(12px, 1.6vw, 13px);
         color: var(--text-dim);
@@ -711,7 +695,6 @@
       #about .section-label {
         text-align: center;
       }
-
       .about-title {
         font-family: "Playfair Display", serif;
         font-size: clamp(28px, 5.5vw, 72px);
@@ -724,7 +707,6 @@
         font-style: italic;
         display: block;
       }
-
       .about-desc {
         font-size: clamp(12px, 1.8vw, 14px);
         color: var(--text-dim);
@@ -762,7 +744,6 @@
         text-transform: uppercase;
         margin-bottom: 18px;
       }
-
       .feature-title {
         font-family: "Playfair Display", serif;
         font-size: clamp(22px, 3.2vw, 44px);
@@ -774,7 +755,6 @@
         color: var(--orange);
         font-style: italic;
       }
-
       .feature-desc {
         font-size: clamp(12px, 1.6vw, 13px);
         color: var(--text-dim);
@@ -814,7 +794,6 @@
       .skill-node:hover {
         transform: scale(1.05);
       }
-
       .skill-green {
         background: rgba(30, 80, 40, 0.6);
         border-color: rgba(50, 200, 80, 0.3);
@@ -880,7 +859,6 @@
         border-color: rgba(232, 103, 10, 0.35);
         background: rgba(232, 103, 10, 0.04);
       }
-
       .project-number {
         font-size: 11px;
         color: var(--orange);
@@ -889,7 +867,6 @@
         padding-top: 4px;
         white-space: nowrap;
       }
-
       .project-title {
         font-family: "Playfair Display", serif;
         font-size: clamp(17px, 2.5vw, 22px);
@@ -897,7 +874,6 @@
         margin-bottom: 10px;
         line-height: 1.25;
       }
-
       .project-desc {
         font-size: clamp(12px, 1.5vw, 13px);
         color: var(--text-dim);
@@ -905,13 +881,11 @@
         margin-bottom: 18px;
         max-width: 680px;
       }
-
       .project-tags {
         display: flex;
         flex-wrap: wrap;
         gap: 7px;
       }
-
       .tag {
         font-size: 11px;
         padding: 4px 11px;
@@ -922,7 +896,6 @@
         letter-spacing: 0.04em;
         white-space: nowrap;
       }
-
       .project-link {
         color: var(--orange);
         text-decoration: none;
@@ -956,7 +929,6 @@
         overflow: hidden;
         margin-top: clamp(40px, 6vw, 64px);
       }
-
       .number-cell {
         padding: clamp(32px, 5vw, 56px) clamp(24px, 4vw, 48px);
         background: var(--card-bg);
@@ -966,7 +938,6 @@
       .number-cell:last-child {
         border-right: none;
       }
-
       .number-big {
         font-family: "Playfair Display", serif;
         font-size: clamp(42px, 7vw, 96px);
@@ -976,7 +947,6 @@
         margin-bottom: 14px;
         display: block;
       }
-
       .number-label {
         font-size: clamp(11px, 1.5vw, 12px);
         color: var(--text-dim);
@@ -1000,7 +970,6 @@
         padding: clamp(28px, 5vw, 48px) 0;
         border-top: 1px solid var(--border);
       }
-
       .exp-company {
         font-size: 12px;
         color: var(--orange);
@@ -1013,7 +982,6 @@
         color: var(--text-dim);
         line-height: 1.6;
       }
-
       .exp-role {
         font-family: "Playfair Display", serif;
         font-size: clamp(20px, 3vw, 26px);
@@ -1021,7 +989,6 @@
         margin-bottom: 18px;
         line-height: 1.2;
       }
-
       .exp-bullets {
         list-style: none;
         display: flex;
@@ -1058,7 +1025,6 @@
         overflow: hidden;
         margin-top: clamp(28px, 5vw, 48px);
       }
-
       .terminal-bar {
         background: #1a1a1a;
         padding: 12px 16px;
@@ -1068,7 +1034,6 @@
         border-bottom: 1px solid var(--border);
         flex-shrink: 0;
       }
-
       .dot {
         width: 12px;
         height: 12px;
@@ -1084,14 +1049,12 @@
       .dot-green {
         background: #28c840;
       }
-
       .terminal-title {
         font-size: 12px;
         color: var(--text-dim);
         margin-left: 8px;
         letter-spacing: 0.05em;
       }
-
       .terminal-body {
         padding: clamp(16px, 3vw, 32px);
         font-size: clamp(11px, 1.4vw, 13px);
@@ -1099,7 +1062,6 @@
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
       }
-
       .t-prompt {
         color: var(--text-dim);
       }
@@ -1118,7 +1080,6 @@
       .t-dim {
         color: #555;
       }
-
       .t-section {
         background: rgba(255, 255, 255, 0.03);
         border: 1px solid var(--border);
@@ -1141,14 +1102,12 @@
         align-items: start;
         margin-top: clamp(28px, 5vw, 48px);
       }
-
       .workflow-steps {
         display: flex;
         flex-direction: column;
         gap: 24px;
         padding-top: 16px;
       }
-
       .wstep {
         display: flex;
         align-items: center;
@@ -1188,7 +1147,6 @@
         gap: clamp(12px, 2vw, 16px);
         margin-top: clamp(28px, 5vw, 48px);
       }
-
       .cert-card {
         background: var(--card-bg);
         border: 1px solid var(--border);
@@ -1202,21 +1160,18 @@
       .cert-card:hover {
         border-color: rgba(232, 103, 10, 0.35);
       }
-
       .cert-issuer {
         font-size: 11px;
         color: var(--orange);
         letter-spacing: 0.15em;
         text-transform: uppercase;
       }
-
       .cert-name {
         font-family: "Playfair Display", serif;
         font-size: clamp(15px, 2vw, 18px);
         font-weight: 500;
         line-height: 1.3;
       }
-
       .cert-date {
         font-size: 11px;
         color: var(--text-dim);
@@ -1232,7 +1187,6 @@
         border-top: 1px solid var(--border);
         text-align: center;
       }
-
       .contact-title {
         font-family: "Playfair Display", serif;
         font-size: clamp(32px, 6vw, 80px);
@@ -1245,21 +1199,18 @@
         font-style: italic;
         display: block;
       }
-
       .contact-sub {
         font-size: clamp(12px, 1.8vw, 14px);
         color: var(--text-dim);
         margin-bottom: clamp(32px, 5vw, 48px);
         line-height: 1.75;
       }
-
       .contact-links {
         display: flex;
         gap: clamp(10px, 2vw, 16px);
         justify-content: center;
         flex-wrap: wrap;
       }
-
       .contact-link {
         display: flex;
         align-items: center;
@@ -1303,7 +1254,6 @@
         flex-wrap: wrap;
         gap: 16px;
       }
-
       .footer-brand {
         font-size: 12px;
         color: var(--text-dim);
@@ -1313,7 +1263,6 @@
       .footer-brand span {
         color: var(--orange);
       }
-
       .footer-links {
         display: flex;
         gap: clamp(12px, 3vw, 24px);
@@ -1372,15 +1321,12 @@
         .feature-block.reverse > * {
           direction: ltr;
         }
-
         .certs-grid {
           grid-template-columns: 1fr;
         }
-
         .numbers-grid {
           grid-template-columns: repeat(3, 1fr);
         }
-
         .workflow-grid {
           grid-template-columns: 1fr;
           gap: 28px;
@@ -1397,10 +1343,7 @@
          MOBILE (≤ 640px)
       =========================== */
       @media (max-width: 640px) {
-        /* Show hamburger, hide nav links + cta */
-        .nav-links {
-          display: none;
-        }
+        .nav-links,
         .nav-cta {
           display: none;
         }
@@ -1410,26 +1353,20 @@
         .nav-mobile-menu {
           display: flex;
         }
-
-        /* Pain items stack */
         .pain-item {
           grid-template-columns: 1fr;
           gap: 12px;
         }
-
-        /* Projects: number goes inline */
         .project-card {
           grid-template-columns: auto 1fr;
           grid-template-rows: auto auto;
         }
         .project-link {
-          grid-column: 2 / 3;
-          grid-row: 2 / 3;
+          grid-column: 2/3;
+          grid-row: 2/3;
           padding-top: 0;
           margin-top: -8px;
         }
-
-        /* Numbers: 1 per row */
         .numbers-grid {
           grid-template-columns: 1fr;
           gap: 0;
@@ -1441,16 +1378,10 @@
         .number-cell:last-child {
           border-bottom: none;
         }
-
-        /* Experience stack */
         .exp-item {
           grid-template-columns: 1fr;
           gap: 14px;
         }
-
-        /* Certs: already 1-col from 900 */
-
-        /* Contact links: full width on tiny screens */
         .contact-links {
           flex-direction: column;
           align-items: center;
@@ -1460,20 +1391,14 @@
           max-width: 380px;
           justify-content: center;
         }
-
-        /* Footer stack */
         footer {
           flex-direction: column;
           align-items: flex-start;
           gap: 12px;
         }
-
-        /* Hide scroll hint on mobile */
         .scroll-hint {
           display: none;
         }
-
-        /* Hero linebreak behaviour */
         .hero-title br {
           display: none;
         }
@@ -1486,16 +1411,13 @@
         :root {
           --page-pad: 16px;
         }
-
         .hero-eyebrow {
           font-size: 9px;
           letter-spacing: 0.12em;
         }
-
         .pain-quote {
           font-size: 16px;
         }
-
         .project-card {
           grid-template-columns: 1fr;
         }
@@ -1505,18 +1427,16 @@
         .project-link {
           padding-top: 4px;
         }
-
         .cert-name {
           font-size: 14px;
         }
-
         nav {
           padding: 0 16px;
         }
       }
 
       /* ===========================
-         LANDSCAPE PHONE (≤ 812px height)
+         LANDSCAPE PHONE
       =========================== */
       @media (max-height: 500px) and (max-width: 900px) {
         #hero {
@@ -1566,14 +1486,11 @@
     </style>
   </head>
   <body>
-    <!-- Custom cursor -->
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
-    <!-- Starfield canvas -->
     <canvas id="starfield"></canvas>
 
-    <!-- Sun -->
     <div id="sun-container">
       <div class="sun-corona-outer"></div>
       <div class="sun-corona-mid"></div>
@@ -1585,7 +1502,6 @@
       </div>
     </div>
 
-    <!-- NAV -->
     <nav>
       <a href="#" class="nav-logo">
         <span class="star">✦</span>
@@ -1613,7 +1529,6 @@
       </button>
     </nav>
 
-    <!-- Mobile Menu -->
     <div class="nav-mobile-menu" id="mobileMenu" aria-hidden="true">
       <a href="#stack" class="mobile-nav-link">About</a>
       <a href="#projects" class="mobile-nav-link">Projects</a>
@@ -1624,18 +1539,15 @@
       >
     </div>
 
-    <!-- HERO -->
     <section id="hero">
       <div class="glow glow-1"></div>
       <div class="glow glow-2"></div>
 
       <p class="hero-eyebrow">// ML Engineer · GenAI Developer · AI Engineer</p>
-
       <h1 class="hero-title">
         Your product ships features.<br />
         Mine ships <span class="accent">intelligence.</span>
       </h1>
-
       <p class="hero-sub">
         I build end-to-end ML systems and LLM-powered applications — RAG
         pipelines, agentic workflows, reasoning interfaces. From
@@ -1643,19 +1555,16 @@
         <span class="hl">production FastAPI deployments</span>, I close the gap
         between research and real users.
       </p>
-
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">View Projects →</a>
         <a href="#contact" class="btn-ghost">Get in Touch</a>
       </div>
-
       <div class="scroll-hint">
         <span class="scroll-line"></span>
         Scroll to explore
       </div>
     </section>
 
-    <!-- THE STACK -->
     <section id="stack">
       <p class="section-label reveal">// The Problem I Solve</p>
       <h2 class="section-title reveal">
@@ -1705,7 +1614,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about">
       <p class="section-label reveal">// Who I Am</p>
       <h2 class="about-title reveal">
@@ -1720,7 +1628,6 @@
       </p>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills">
       <div class="feature-block reveal">
         <div>
@@ -1842,7 +1749,6 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects">
       <p class="section-label reveal">// Projects</p>
       <h2 class="section-title reveal">
@@ -1862,7 +1768,7 @@
           </p>
           <div class="project-tags">
             <span class="tag">LangGraph</span><span class="tag">FAISS</span
-            ><span class="tag">HuggingFace</span> <span class="tag">Groq</span
+            ><span class="tag">HuggingFace</span><span class="tag">Groq</span
             ><span class="tag">Streamlit</span><span class="tag">LangSmith</span
             ><span class="tag">SQLite</span>
           </div>
@@ -1891,8 +1797,8 @@
           </p>
           <div class="project-tags">
             <span class="tag">LangGraph</span><span class="tag">LangChain</span
-            ><span class="tag">Groq API</span>
-            <span class="tag">Llama 3.3 70B</span
+            ><span class="tag">Groq API</span
+            ><span class="tag">Llama 3.3 70B</span
             ><span class="tag">Streamlit</span><span class="tag">RAG</span>
           </div>
         </div>
@@ -1919,8 +1825,8 @@
           </p>
           <div class="project-tags">
             <span class="tag">LangChain LCEL</span><span class="tag">FAISS</span
-            ><span class="tag">Groq API</span>
-            <span class="tag">YouTube Transcript API</span
+            ><span class="tag">Groq API</span
+            ><span class="tag">YouTube Transcript API</span
             ><span class="tag">Streamlit</span>
           </div>
         </div>
@@ -1948,8 +1854,8 @@
           <div class="project-tags">
             <span class="tag">DeepSeek-R1</span
             ><span class="tag">LangChain</span
-            ><span class="tag">HuggingFace API</span>
-            <span class="tag">Streamlit</span><span class="tag">Groq</span>
+            ><span class="tag">HuggingFace API</span
+            ><span class="tag">Streamlit</span><span class="tag">Groq</span>
           </div>
         </div>
         <a
@@ -1961,7 +1867,6 @@
       </div>
     </section>
 
-    <!-- NUMBERS -->
     <section id="numbers">
       <p class="section-label reveal">// Early Numbers</p>
       <h2 class="section-title reveal">
@@ -1991,7 +1896,6 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience">
       <p class="section-label reveal">// Experience</p>
       <h2 class="section-title reveal">
@@ -2046,7 +1950,6 @@
       </div>
     </section>
 
-    <!-- WORKFLOW -->
     <section id="workflow">
       <p class="section-label reveal">// How I Work</p>
       <h2 class="section-title reveal">
@@ -2149,13 +2052,11 @@
       </div>
     </section>
 
-    <!-- CERTS -->
     <section id="certs">
       <p class="section-label reveal">// Certifications</p>
       <h2 class="section-title reveal">
         Certified by the companies<br />building the future.
       </h2>
-
       <div class="certs-grid">
         <div class="cert-card reveal">
           <p class="cert-issuer">Anthropic</p>
@@ -2192,14 +2093,11 @@
       </div>
     </section>
 
-    <!-- Achievement -->
     <section id="certs">
       <p class="section-label reveal">// Achievements</p>
       <h2 class="section-title reveal">
-        Built in competitions<br />
-        Validated by industry.
+        Built in competitions<br />Validated by industry.
       </h2>
-
       <div class="certs-grid">
         <div class="cert-card reveal">
           <h3 class="cert-name">
@@ -2208,8 +2106,8 @@
           </h3>
           <p class="cert-date">
             2x champion of coding competition consecutively, competed against
-            multiple competitiors and we all were restricted to basic
-            technologies for implementations, We're restricted to plan, acquire
+            multiple competitors and we all were restricted to basic
+            technologies for implementations. Restricted to plan, acquire
             perfect resources from given pool of resources and implementation of
             our thoughts and then testing whether it works as expected and then
             to present infront of expert within only 90 minutes.
@@ -2239,7 +2137,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <div class="glow glow-1"></div>
       <h2 class="contact-title reveal">
@@ -2272,7 +2169,6 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
       <p class="footer-brand">
         ✦ Adarsh Pandey ·
@@ -2337,19 +2233,14 @@
       }
 
       hamburger.addEventListener("click", () => toggleMenu(!menuOpen));
-
       document
         .querySelectorAll(".mobile-nav-link, .mobile-cta")
         .forEach((link) => {
           link.addEventListener("click", () => toggleMenu(false));
         });
-
-      // Close on outside click
       mobileMenu.addEventListener("click", (e) => {
         if (e.target === mobileMenu) toggleMenu(false);
       });
-
-      // Close on Escape
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape" && menuOpen) toggleMenu(false);
       });
@@ -2369,40 +2260,54 @@
 
       function generateStars() {
         stars = [];
-        const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        // Reduce star count on mobile for perf
         const isMobile = W < 640;
         const counts = isMobile ? [160, 70, 15] : [320, 140, 30];
 
-        for (let i = 0; i < counts[0]; i++) {
-          stars.push({
-            x: Math.random() * W,
-            y: Math.random() * H,
-            r: Math.random() * 0.6 + 0.2,
-            o: Math.random() * 0.35 + 0.08,
-            ts: Math.random() * 0.012 + 0.004,
-            tp: Math.random() * Math.PI * 2,
-          });
-        }
-        for (let i = 0; i < counts[1]; i++) {
-          stars.push({
-            x: Math.random() * W,
-            y: Math.random() * H,
-            r: Math.random() * 0.9 + 0.5,
-            o: Math.random() * 0.45 + 0.15,
-            ts: Math.random() * 0.008 + 0.003,
-            tp: Math.random() * Math.PI * 2,
-          });
-        }
-        for (let i = 0; i < counts[2]; i++) {
-          stars.push({
-            x: Math.random() * W,
-            y: Math.random() * H,
-            r: Math.random() * 1.2 + 0.9,
-            o: Math.random() * 0.55 + 0.35,
-            ts: Math.random() * 0.006 + 0.002,
-            tp: Math.random() * Math.PI * 2,
-          });
+        const tiers = [
+          {
+            count: counts[0],
+            rMin: 0.2,
+            rMax: 0.6,
+            oMin: 0.08,
+            oMax: 0.35,
+            tsMin: 0.004,
+            speed: 0.18,
+          },
+          {
+            count: counts[1],
+            rMin: 0.5,
+            rMax: 0.9,
+            oMin: 0.15,
+            oMax: 0.45,
+            tsMin: 0.003,
+            speed: 0.35,
+          },
+          {
+            count: counts[2],
+            rMin: 0.9,
+            rMax: 1.2,
+            oMin: 0.35,
+            oMax: 0.55,
+            tsMin: 0.002,
+            speed: 0.65,
+          },
+        ];
+
+        for (const t of tiers) {
+          for (let i = 0; i < t.count; i++) {
+            const angle = Math.random() * Math.PI * 2;
+            const spd = (Math.random() * 0.3 + 0.7) * t.speed;
+            stars.push({
+              x: Math.random() * W,
+              y: Math.random() * H,
+              r: Math.random() * (t.rMax - t.rMin) + t.rMin,
+              o: Math.random() * (t.oMax - t.oMin) + t.oMin,
+              ts: Math.random() * 0.012 + t.tsMin,
+              tp: Math.random() * Math.PI * 2,
+              vx: Math.cos(angle) * spd,
+              vy: Math.sin(angle) * spd,
+            });
+          }
         }
       }
 
@@ -2410,14 +2315,28 @@
       function drawStars() {
         ctx.clearRect(0, 0, W, H);
         frame += 0.016;
+
         for (const s of stars) {
+          // Move
+          s.x += s.vx;
+          s.y += s.vy;
+
+          // Wrap around edges
+          if (s.x < -2) s.x = W + 2;
+          if (s.x > W + 2) s.x = -2;
+          if (s.y < -2) s.y = H + 2;
+          if (s.y > H + 2) s.y = -2;
+
+          // Twinkle
           const tw = Math.sin(frame * s.ts * 60 + s.tp);
           const alpha = s.o + tw * (s.o * 0.4);
+
           ctx.beginPath();
           ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
           ctx.fillStyle = `rgba(255,252,245,${Math.max(0.02, alpha)})`;
           ctx.fill();
         }
+
         requestAnimationFrame(drawStars);
       }
 
@@ -2441,7 +2360,6 @@
       );
       reveals.forEach((el) => observer.observe(el));
 
-      // Stagger delays
       document
         .querySelectorAll(".pain-item, .project-card, .cert-card, .exp-item")
         .forEach((el, i) => {
